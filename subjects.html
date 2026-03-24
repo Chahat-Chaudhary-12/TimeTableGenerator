@@ -1,0 +1,101 @@
+<!-- ── SUBJECTS PAGE ── -->
+<div id="page-subjects" class="page">
+
+  <!-- Add Subject Form -->
+  <div class="panel" style="margin-bottom:20px">
+    <div class="panel-header"><span class="panel-title">Add Subject</span></div>
+    <div class="panel-body">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Subject Code</label>
+          <input placeholder="e.g. TCS-408">
+        </div>
+        <div class="form-group">
+          <label>Subject Name</label>
+          <input placeholder="e.g. Programming in Java">
+        </div>
+        <div class="form-group">
+          <label>Hours per Week</label>
+          <input type="number" placeholder="4">
+        </div>
+        <div class="form-group">
+          <label>Type</label>
+          <select>
+            <option>Theory</option>
+            <option>Lab</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Assign to Sections</label>
+          <select>
+            <option>All Sections (A–H)</option>
+            <option>Section A</option>
+            <option>Section B</option>
+            <option>Custom</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Primary Teacher ID</label>
+          <input placeholder="e.g. 0">
+        </div>
+      </div>
+      <div style="margin-top:16px;display:flex;gap:8px">
+        <button class="btn btn-primary">+ Add Subject</button>
+        <button class="btn btn-ghost">Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subjects Table -->
+  <div class="panel">
+    <div class="panel-header">
+      <span class="panel-title">All Subjects</span>
+      <button class="btn btn-ghost">Import CSV</button>
+    </div>
+    <div class="panel-body" style="padding:0">
+      <table class="data-table">
+        <thead>
+          <tr><th>Code</th><th>Name</th><th>Type</th><th>Hrs/Wk</th><th>Sections</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TCS-408</td><td>Programming in Java</td>
+            <td><span class="badge badge-blue">Theory</span></td><td>4</td><td>A–H</td>
+            <td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button> <button class="btn btn-danger" style="padding:4px 10px;font-size:10px">Delete</button></td>
+          </tr>
+          <tr>
+            <td>TCS-402</td><td>Finite Automata &amp; FL</td>
+            <td><span class="badge badge-blue">Theory</span></td><td>4</td><td>A–H</td>
+            <td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button> <button class="btn btn-danger" style="padding:4px 10px;font-size:10px">Delete</button></td>
+          </tr>
+          <tr>
+            <td>TCS-403</td><td>Microprocessors</td>
+            <td><span class="badge badge-blue">Theory</span></td><td>4</td><td>A–H</td>
+            <td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button> <button class="btn btn-danger" style="padding:4px 10px;font-size:10px">Delete</button></td>
+          </tr>
+          <tr>
+            <td>TCS-409</td><td>Design &amp; Analysis of Algorithms</td>
+            <td><span class="badge badge-blue">Theory</span></td><td>4</td><td>A–H</td>
+            <td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button> <button class="btn btn-danger" style="padding:4px 10px;font-size:10px">Delete</button></td>
+          </tr>
+          <tr>
+            <td>PCS-408</td><td>Java Lab</td>
+            <td><span class="badge badge-green">Lab</span></td><td>2</td><td>A–H</td>
+            <td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button> <button class="btn btn-danger" style="padding:4px 10px;font-size:10px">Delete</button></td>
+          </tr>
+          <tr>
+            <td>PCS-403</td><td>Microprocessors Lab</td>
+            <td><span class="badge badge-green">Lab</span></td><td>2</td><td>A–H</td>
+            <td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button> <button class="btn btn-danger" style="padding:4px 10px;font-size:10px">Delete</button></td>
+          </tr>
+          <tr>
+            <td>PCS-409</td><td>DAA Lab</td>
+            <td><span class="badge badge-green">Lab</span></td><td>2</td><td>A–H</td>
+            <td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button> <button class="btn btn-danger" style="padding:4px 10px;font-size:10px">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

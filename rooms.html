@@ -1,0 +1,54 @@
+
+<div id="page-rooms" class="page">
+
+ 
+  <div class="panel" style="margin-bottom:20px">
+    <div class="panel-header"><span class="panel-title">Add Room</span></div>
+    <div class="panel-body">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Room Name</label>
+          <input placeholder="e.g. LT-3">
+        </div>
+        <div class="form-group">
+          <label>Capacity</label>
+          <input type="number" placeholder="60">
+        </div>
+        <div class="form-group">
+          <label>Type</label>
+          <select>
+            <option>Lecture Theater</option>
+            <option>Laboratory</option>
+            <option>Tutorial Room</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Block</label>
+          <input placeholder="e.g. Block A">
+        </div>
+      </div>
+      <div style="margin-top:16px">
+        <button class="btn btn-primary">+ Add Room</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rooms Table -->
+  <div class="panel">
+    <div class="panel-header"><span class="panel-title">Rooms</span></div>
+    <div class="panel-body" style="padding:0">
+      <table class="data-table">
+        <thead>
+          <tr><th>Room</th><th>Type</th><th>Capacity</th><th>Availability</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>LT-1</td><td><span class="badge badge-blue">Lecture</span></td><td>80</td><td><span class="badge badge-green">Available</span></td><td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button></td></tr>
+          <tr><td>LT-2</td><td><span class="badge badge-blue">Lecture</span></td><td>80</td><td><span class="badge badge-green">Available</span></td><td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button></td></tr>
+          <tr><td>Lab-1</td><td><span class="badge badge-green">Lab</span></td><td>30</td><td><span class="badge badge-orange">Partial</span></td><td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button></td></tr>
+          <tr><td>Lab-2</td><td><span class="badge badge-green">Lab</span></td><td>30</td><td><span class="badge badge-green">Available</span></td><td><button class="btn btn-ghost" style="padding:4px 10px;font-size:10px">Edit</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

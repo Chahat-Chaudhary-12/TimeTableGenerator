@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TimetableGen — CSE Department</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <h1>TimetableGen</h1>
+      <span>CSE Department · 2nd Year</span>
+    </div>
+
+    <nav>
+      <div class="nav-section">
+        <div class="nav-label">Main</div>
+        <button class="nav-item active" onclick="showPage('dashboard', this)">
+          <span class="icon"></span> Dashboard
+        </button>
+        <button class="nav-item" onclick="showPage('generate', this)">
+          <span class="icon"></span> Generate
+        </button>
+        <button class="nav-item" onclick="showPage('timetable', this)">
+          <span class="icon">📅</span> Timetables
+        </button>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Data</div>
+        <button class="nav-item" onclick="showPage('subjects', this)">
+          <span class="icon">📚</span> Subjects
+        </button>
+        <button class="nav-item" onclick="showPage('teachers', this)">
+          <span class="icon">👤</span> Teachers
+        </button>
+        <button class="nav-item" onclick="showPage('rooms', this)">
+          <span class="icon">🏫</span> Rooms
+        </button>
+        <button class="nav-item" onclick="showPage('sections', this)">
+          <span class="icon">🗂</span> Sections
+        </button>
+      </div>
+      <div class="nav-section">
+        <div class="nav-label">Output</div>
+        <button class="nav-item" onclick="showPage('conflicts', this)">
+          <span class="icon"></span> Conflicts
+        </button>
+        <button class="nav-item" onclick="showPage('export', this)">
+          <span class="icon"></span> Export
+        </button>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <p><span class="status-dot"></span>Engine ready</p>
+      <p style="margin-top:4px">v1.0 · output_v1</p>
+    </div>
+  </aside>
+
+
+  <div class="main">
+
+  
+    <header class="topbar">
+      <div class="topbar-left">
+        <div>
+          <div class="page-title" id="page-title">Dashboard</div>
+          <div class="breadcrumb">CSE &rsaquo; <span id="breadcrumb-sub">Overview</span></div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="search-box">
+          <span>🔍</span>
+          <input placeholder="Search subjects, teachers..." />
+        </div>
+        <button class="btn btn-ghost">⚙ Settings</button>
+        <button class="btn btn-primary" onclick="showPage('generate', document.querySelectorAll('.nav-item')[1])">⚡ Generate</button>
+      </div>
+    </header>
+
+  
+    <div class="content" id="app-content">
+     
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

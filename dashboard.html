@@ -1,0 +1,125 @@
+
+<div id="page-dashboard" class="page active">
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-label">Sections</div>
+      <div class="stat-value">8</div>
+      <div class="stat-sub">A · B · C · D · E · F · G · H</div>
+    </div>
+    <div class="stat-card green">
+      <div class="stat-label">Subjects</div>
+      <div class="stat-value">7</div>
+      <div class="stat-sub">4 theory · 3 lab</div>
+    </div>
+    <div class="stat-card orange">
+      <div class="stat-label">Teachers</div>
+      <div class="stat-value">43</div>
+      <div class="stat-sub">Assigned across sections</div>
+    </div>
+    <div class="stat-card purple">
+      <div class="stat-label">Conflicts</div>
+      <div class="stat-value">0</div>
+      <div class="stat-sub">Clean schedule</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+
+    
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Schedule Coverage</span>
+        <span class="badge badge-green">72% filled</span>
+      </div>
+      <div class="panel-body">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:6px"><span>Section A</span><span>28/40 slots</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:70%"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:6px"><span>Section B</span><span>30/40 slots</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:6px"><span>Section C</span><span>26/40 slots</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:65%"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:6px"><span>Section D</span><span>32/40 slots</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:80%"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:6px"><span>Section E–H</span><span>avg 29/40</span></div>
+            <div class="progress-bar"><div class="progress-fill" style="width:72%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Recent Activity</span>
+      </div>
+      <div class="panel-body">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:28px;height:28px;border-radius:50%;background:rgba(79,142,255,0.15);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">⚡</div>
+            <div>
+              <div style="font-size:12px">Schedule generated for all sections</div>
+              <div style="font-size:10px;color:var(--muted);margin-top:2px">output_v1 · 8 sections · 0 conflicts</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:28px;height:28px;border-radius:50%;background:rgba(34,211,165,0.1);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">✓</div>
+            <div>
+              <div style="font-size:12px">Conflict check passed</div>
+              <div style="font-size:10px;color:var(--muted);margin-top:2px">No teacher overlap found</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:28px;height:28px;border-radius:50%;background:rgba(249,115,22,0.1);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">📥</div>
+            <div>
+              <div style="font-size:12px">Input data loaded</div>
+              <div style="font-size:10px;color:var(--muted);margin-top:2px">subjects.csv · rooms.csv · teachers</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div style="width:28px;height:28px;border-radius:50%;background:rgba(124,58,237,0.15);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">📤</div>
+            <div>
+              <div style="font-size:12px">CSV exports created</div>
+              <div style="font-size:10px;color:var(--muted);margin-top:2px">8 section files · 1 master schedule</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="panel">
+    <div class="panel-header">
+      <span class="panel-title">Subject Distribution</span>
+      <button class="btn btn-ghost" style="font-size:11px">View All</button>
+    </div>
+    <div class="panel-body" style="padding:0">
+      <table class="data-table">
+        <thead>
+          <tr><th>Code</th><th>Subject Name</th><th>Type</th><th>Hrs/Week</th><th>Sections</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>TCS-408</td><td>Programming in Java</td><td><span class="badge badge-blue">Theory</span></td><td>4</td><td><span class="badge badge-purple">A–H</span></td></tr>
+          <tr><td>TCS-402</td><td>Finite Automata &amp; Formal Languages</td><td><span class="badge badge-blue">Theory</span></td><td>4</td><td><span class="badge badge-purple">A–H</span></td></tr>
+          <tr><td>TCS-403</td><td>Microprocessors</td><td><span class="badge badge-blue">Theory</span></td><td>4</td><td><span class="badge badge-purple">A–H</span></td></tr>
+          <tr><td>TCS-409</td><td>Design &amp; Analysis of Algorithms</td><td><span class="badge badge-blue">Theory</span></td><td>4</td><td><span class="badge badge-purple">A–H</span></td></tr>
+          <tr><td>PCS-408</td><td>Java Lab</td><td><span class="badge badge-green">Lab</span></td><td>2</td><td><span class="badge badge-purple">A–H</span></td></tr>
+          <tr><td>PCS-403</td><td>Microprocessors Lab</td><td><span class="badge badge-green">Lab</span></td><td>2</td><td><span class="badge badge-purple">A–H</span></td></tr>
+          <tr><td>PCS-409</td><td>DAA Lab</td><td><span class="badge badge-green">Lab</span></td><td>2</td><td><span class="badge badge-purple">A–H</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
